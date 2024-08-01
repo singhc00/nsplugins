@@ -1,0 +1,27 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "~/*": [
+        "src/*"
+      ],
+      "@demo/shared": [
+        "tools/demo/index.ts"
+      ],
+      "@csingh1990/*": [
+        "../../dist/packages/*"
+      ],
+      "@csingh1990/arcgis-map": [
+        "../../packages/arcgis-map/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "./references.d.ts",
+    "./src/main.ts",
+    "./src/polyfills.ts"
+  ],
+  "include": [
+    "../../packages/**/references.d.ts"
+  ]
+}

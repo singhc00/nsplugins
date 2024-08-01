@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page" xmlns:map="@csingh1990/arcgis-map" >
+    <Page.actionBar>
+        <ActionBar title="arcgis-map" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout class="p-20">
+        <ScrollView class="h-full">
+          <StackLayout>
+            <Button text="Test arcgis-map" tap="{{ testIt }}" class="btn btn-primary"/>
+            <map:ArcgisMap />
+          </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</Page>

@@ -1,0 +1,11 @@
+{
+  "main": "./src/main.ts",
+  "dependencies": {
+    "@nativescript/core": "file:../../node_modules/@nativescript/core",
+    "@csingh1990/arcgis-map": "file:../../dist/packages/arcgis-map"
+  },
+  "devDependencies": {
+    "@nativescript/android": "~8.7.0",
+    "@nativescript/ios": "~8.7.0"
+  }
+}

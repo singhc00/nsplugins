@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDirs": [
+      ".",
+      "../.."
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "src/*"
+      ],
+      "@demo/shared": [
+        "../../tools/demo/index.ts"
+      ],
+      "@csingh1990/*": [
+        "../../packages/*"
+      ],
+      "@csingh1990/arcgis-map": [
+        "../../packages/arcgis-map/index.d.ts"
+      ]
+    }
+  }
+}
