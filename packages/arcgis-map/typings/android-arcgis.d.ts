@@ -3,8 +3,10 @@
 declare module com {
 	export module arcgismaps {
 		export class ApiKey {
+			
 			public static class: java.lang.Class<com.arcgismaps.ApiKey>;
 			public static "hashCode-impl"(param0: string): number;
+			public static create(param0: string): com.arcgismaps.ApiKey;
 			public equals(param0: any): boolean;
 			public static "getCoreApiKey-impl$arcgis_maps_any_release"(param0: string): string;
 			public toString(): string;
@@ -17,8 +19,8 @@ declare module com {
 		export module ApiKey {
 			export class Companion {
 				public static class: java.lang.Class<com.arcgismaps.ApiKey.Companion>;
-				public "create-y3sK56w"(param0: string): string;
-				public static create(param0: string): com.arcgismaps.ApiKey;
+				public "create-y3sK56w"(param0: string): com.arcgismaps.ApiKey;
+				public create(param0: string): com.arcgismaps.ApiKey;
 				//public static create(param0: any);
 			}
 		}
@@ -73,6 +75,7 @@ declare module com {
 			public static INSTANCE: com.arcgismaps.ArcGISEnvironment;
 			public static TAG: string;
 			public static apiKey: com.arcgismaps.ApiKey;
+			public static setApiKey(param0: string): void;
 			public getArcadeConsoleMessage(): kotlinx.coroutines.flow.SharedFlow<com.arcgismaps.arcade.ArcadeConsoleMessageEvent>;
 			public setServiceCurveGeometryMode(param0: com.arcgismaps.ServiceCurveGeometryMode): void;
 			public setApplicationContext(param0: globalAndroid.content.Context): void;

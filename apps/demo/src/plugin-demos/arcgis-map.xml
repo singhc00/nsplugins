@@ -1,14 +1,20 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page" xmlns:map="@csingh1990/arcgis-map" >
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page" xmlns:map="@csingh1990/arcgis-map" 
+height="1550">
     <Page.actionBar>
         <ActionBar title="arcgis-map" icon="" class="action-bar">
         </ActionBar>
     </Page.actionBar>
-    <StackLayout class="p-20">
-        <ScrollView class="h-full">
-          <StackLayout>
-            <Button text="Test arcgis-map" tap="{{ testIt }}" class="btn btn-primary"/>
-            <map:ArcgisMap />
-          </StackLayout>
-        </ScrollView>
-    </StackLayout>
+    <!-- <AbsoluteLayout class="h-full" wid> -->
+      <map:ArcgisMap />
+    <!-- </AbsoluteLayout> -->
+
+    <!-- <StackLayout class="p-20"> -->
+        <!-- <Frame class="h-full" height="1500"> -->
+          <!-- <StackLayout>
+            <Button text="Test arcgis-map" tap="{{ testIt }}" class="btn btn-primary"/> -->
+            
+          <!-- </StackLayout> -->
+
+        <!-- </ScrollView> -->
+    <!-- </StackLayout> -->
 </Page>
